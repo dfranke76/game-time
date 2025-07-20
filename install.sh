@@ -2,14 +2,14 @@
 # Install the Minecraft monitor script as LaunchAgent for selected users
 set -euo pipefail
 
-PLIST_ID="no.kopseng.minecraft-monitor"
+PLIST_ID="no.kopseng.game-time"
 PLIST_FILENAME="$PLIST_ID.plist"
-SCRIPT_NAME="minecraft-monitor.scpt"
+SCRIPT_NAME="game-time.scpt"
 
-APP_SUPPORT_SUBDIR="Library/Application Support/minecraft-monitor"
+APP_SUPPORT_SUBDIR="Library/Application Support/game-time"
 LAUNCH_AGENTS_SUBDIR="Library/LaunchAgents"
 
-MONITOR_SCRIPT_SOURCE="minecraft-monitor.applescript"
+MONITOR_SCRIPT_SOURCE="game-time.applescript"
 
 main() {
     trap cleanup EXIT
